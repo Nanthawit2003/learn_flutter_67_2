@@ -1,106 +1,22 @@
-//  Step 4: stateless widget
 import 'package:flutter/material.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
-  // Step 5: container, color,row, main axis, cross axis
+  
   @override 
   Widget build(BuildContext context) {
-    // return Column(
-    //   // mainAxisAlignment: MainAxisAlignment.start,
-    //   // mainAxisAlignment: MainAxisAlignment.center,
-    //   // mainAxisAlignment: MainAxisAlignment.end,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceAround,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //   crossAxisAlignment: CrossAxisAlignment.stretch,
-
-    //   children: [
-    //     Container(
-    //       color: Colors.orangeAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello Flutter",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //       ),
-    //     ),
-    //     Container(
-    //       color: Colors.orangeAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello Flutter",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //       ),
-    //     ),
-    //     Container(
-    //       color: Colors.orangeAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Hello Flutter",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //       ),
-    //     ),
-    //   ],
-    // );
-
-    return Row(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    // Step 6: Image widget
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.orangeAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-          ),
+        Image.asset("assets/images/luxurious-white-lamborghini-stockcake.jpg", width: 150, height: 150,),
+        const SizedBox(height: 10),
+        Image.network(
+          "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          width: 150,
+          height: 150,
         ),
       ],
     );
