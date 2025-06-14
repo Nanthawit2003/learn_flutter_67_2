@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
-  // Step 5: container, color, main axis, cross axis
+  // Step 5: container, color,row, main axis, cross axis
   @override 
   Widget build(BuildContext context) {
     // return Column(
