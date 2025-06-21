@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_67_2/models/person.dart';
 
+//Step 12: use google fonts
+import 'package:google_fonts/google_fonts.dart';
+
 class Item extends StatefulWidget {
   const Item({super.key});
 
@@ -20,6 +23,7 @@ class _ItemState extends State<Item> {
           ),
           margin: const EdgeInsets.symmetric(vertical: 2, horizontal: 5),
           padding: const EdgeInsets.all(20),
+          // Step 10: make a modle for store data
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -35,19 +39,31 @@ class _ItemState extends State<Item> {
                     ),
                   ),
                   Text(
-                    "Job: ${personList[index].job.title}",
-                    style: const TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
-                    ),
+                    //"Job: ${personList[index].job}",
+                    // Step 11: use a enum
+                    "Job: ${personList[index].job.title}",// Use the title from the enum
+                    // style: const TextStyle(
+                    //   fontSize: 24,
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.bold,
+                    // ),
+
+                    // Step 12: use google fonts
+                    style: GoogleFonts.kanit(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                   ),
                   Text(
-                    personList[index].age.toString(),
-                    style: const TextStyle(
+                    // "Job: ${personList[index].Job}",
+                    // Step 11: use a enum
+                    "Job: ${personList[index].job.title}", // Use the title from the enum
+                    //style: const TextStyle(fontSize: 18,color: Colors.white,),
+                    // Step 12: use google fonts
+                    style: GoogleFonts.kanit(
                       fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
+                      color: const Color.fromARGB(255, 219, 135, 10),
                     ),
                   ),
                   Image.asset(

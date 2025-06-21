@@ -14,6 +14,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Step 12: use google fonts
+  google_fonts: ^6.2.1
+
 
   cupertino_icons: ^1.0.8
 
@@ -26,7 +29,6 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter packages.
 flutter:
 

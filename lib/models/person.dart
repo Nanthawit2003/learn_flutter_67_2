@@ -26,22 +26,22 @@ import 'package:flutter/material.dart';
 enum Job {
   Developer(
     title: "Developer",
-    image: "assets/images/fl.jpg",
+    image: "assets/images/323.jpg",
     color: Color(0xFF4CAF50) // Green color for Developer
   ),
   Designer(
     title: "Designer",
-    image: "assets/images/fl.jpg",
+    image: "assets/images/323.jpg",
     color: Color(0xFF2196F3) // Blue color for Designer
   ),
   Manager(
     title: "Manager",
-    image: "assets/images/fl.jpg",
+    image: "assets/images/323.jpg",
     color: Color(0xFFFF9800) // Orange color for Manager
   ),
   Analyst(
     title: "Analyst",
-    image: "assets/images/fl.jpg",
+    image: "assets/images/323.jpg",
     color: Color.fromARGB(255, 246, 0, 0) // Red color for Analyst
   ),
   Tester(
